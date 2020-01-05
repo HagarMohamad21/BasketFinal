@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/white_background"
+    android:padding="10dp"
+        android:id="@+id/root"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/cartImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="@dimen/viewsRadius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/placeholder" />
+
+    <TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:tag="regular"
+        android:layout_marginStart="5dp"
+        android:text="@string/samsung_phon_samsung_phons_amsung"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/priceGuideLine"
+        app:layout_constraintStart_toEndOf="@+id/cartImage"
+        app:layout_constraintTop_toTopOf="@+id/cartImage" />
+
+
+
+    <TextView
+        android:id="@+id/quantityTxt"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/grey_box"
+        android:gravity="center"
+        android:tag="bold"
+        android:text="0"
+        android:textSize="@dimen/bigTextSize"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/cartImage"
+        app:layout_constraintStart_toEndOf="@+id/addBtn" />
+
+    <View
+        android:id="@+id/addBtn"
+        android:layout_width="40dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/quantityTxt"
+        app:layout_constraintStart_toEndOf="@+id/cartImage"
+        app:layout_constraintTop_toTopOf="@+id/quantityTxt"
+        android:background="@drawable/add_background" />
+
+    <View
+        android:id="@+id/removeBtn"
+        android:layout_width="40dp"
+        android:layout_height="@dimen/viewsHeight"
+        app:layout_constraintBottom_toBottomOf="@+id/quantityTxt"
+        app:layout_constraintStart_toEndOf="@+id/quantityTxt"
+        app:layout_constraintTop_toTopOf="@+id/quantityTxt"
+        android:background="@drawable/remove_background" />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/removeBtn"
+        app:layout_constraintEnd_toEndOf="@+id/removeBtn"
+        app:layout_constraintStart_toStartOf="@+id/removeBtn"
+        app:layout_constraintTop_toTopOf="@+id/removeBtn"
+        app:srcCompat="@drawable/ic_remove" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/addBtn"
+        app:layout_constraintEnd_toEndOf="@+id/addBtn"
+        app:layout_constraintStart_toStartOf="@+id/addBtn"
+        app:layout_constraintTop_toTopOf="@+id/addBtn"
+        app:srcCompat="@drawable/ic_plus" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/priceGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="80dp" />
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/lightGrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/priceGuideLine"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:tag="bold"
+        android:text="6990"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/bigTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/divider5"
+        app:layout_constraintTop_toTopOf="@+id/cartImage" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:tag="regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider5"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:text="@string/egp"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+
+
+    <TextView
+        android:id="@+id/deleteBtn"
+        android:layout_width="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:background="@drawable/rounded_red_bg"
+        android:gravity="center"
+        android:text="@string/remove"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        android:tag="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/removeBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/divider5"
+        app:layout_constraintTop_toTopOf="@+id/removeBtn" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:tag="regular"
+        android:text="@string/free_shipping"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toTopOf="@+id/deleteBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/divider5"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+
+</android.support.constraint.ConstraintLayout>

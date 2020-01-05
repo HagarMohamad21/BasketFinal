@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:background="@drawable/transparent_grey_box"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/topGuideLine">
+
+
+  <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/offerImage"
+            android:layout_width="200dp"
+            android:layout_height="170dp"
+            android:src="@mipmap/placeholder"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="@dimen/viewsRadius"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <net.zonetech.elbasket.Utils.OfferRibbonView
+            android:id="@+id/offerRibbonView"
+            android:visibility="gone"
+            android:layout_width="50dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toTopOf="@id/offerImage"
+            app:layout_constraintStart_toStartOf="@id/offerImage" />
+
+        <TextView
+            android:id="@+id/discountTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/discount"
+            android:textColor="@color/white"
+            android:tag="bold"
+            android:visibility="gone"
+            android:textSize="@dimen/textSize"
+            android:layout_marginStart="5dp"
+            android:gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/offerRibbonView"
+            app:layout_constraintStart_toStartOf="@+id/offerRibbonView"
+            app:layout_constraintTop_toTopOf="@+id/offerRibbonView" />
+
+    </android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="bold"
+        android:textColor="@color/black"
+        android:text="@string/pure_rice_one_of_the_finest"
+        android:textSize="@dimen/textSize"
+        android:layout_marginTop="@dimen/offer_item_margin"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+    <TextView
+        android:id="@+id/ratingTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/starIcon"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        android:textSize="@dimen/icon_button_txt_size"
+        android:tag="icon"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_15_egp"
+        app:layout_constraintTop_toBottomOf="@+id/ratingTxt"
+        android:textSize="@dimen/textSize"
+        android:tag="bold"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prices_included_added_tax_value"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        android:textSize="@dimen/textSize"
+        android:tag="regular"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/free_shipping_on_orders_with_250_0"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        android:textSize="@dimen/textSize"
+        android:tag="regular"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(50)"
+        android:textSize="@dimen/textSize"
+        android:layout_marginStart="@dimen/offer_item_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/ratingTxt"
+        app:layout_constraintStart_toEndOf="@+id/ratingTxt"
+        app:layout_constraintTop_toTopOf="@+id/ratingTxt" />
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/details"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSize"
+        android:layout_marginStart="@dimen/offer_item_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/textView20"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toTopOf="@+id/textView20" />
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/offer_item_margin"
+        android:text="@string/details"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/textView21"
+        app:layout_constraintStart_toEndOf="@+id/textView21"
+        app:layout_constraintTop_toTopOf="@+id/textView21" />
+
+
+</merge>

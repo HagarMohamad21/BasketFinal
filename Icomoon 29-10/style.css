@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'elBasket';
+  src:  url('fonts/elBasket.eot?7hmax9');
+  src:  url('fonts/elBasket.eot?7hmax9#iefix') format('embedded-opentype'),
+    url('fonts/elBasket.ttf?7hmax9') format('truetype'),
+    url('fonts/elBasket.woff?7hmax9') format('woff'),
+    url('fonts/elBasket.svg?7hmax9#elBasket') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'elBasket' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-earth:before {
+  content: "\e910";
+}
+.icon-bin:before {
+  content: "\e90b";
+}
+.icon-grid:before {
+  content: "\e90f";
+}
+.icon-remove:before {
+  content: "\e90e";
+}
+.icon-star:before {
+  content: "\e909";
+}
+.icon-add_shopping_cart:before {
+  content: "\e907";
+}
+.icon-paper-plane:before {
+  content: "\e911";
+}
+.icon-plus:before {
+  content: "\e90d";
+}
+.icon-power-plug:before {
+  content: "\e904";
+}
+.icon-close:before {
+  content: "\e902";
+}
+.icon-edit-pencil:before {
+  content: "\e901";
+}
+.icon-heart-o:before {
+  content: "\e908";
+}
+.icon-heart:before {
+  content: "\e90a";
+}
+.icon-language:before {
+  content: "\e900";
+}
+.icon-allicons-01:before {
+  content: "\61";
+}
+.icon-allicons-02:before {
+  content: "\62";
+}
+.icon-allicons-03:before {
+  content: "\63";
+}
+.icon-allicons-04:before {
+  content: "\64";
+}
+.icon-allicons-05:before {
+  content: "\65";
+}
+.icon-allicons-06:before {
+  content: "\66";
+}
+.icon-allicons-07:before {
+  content: "\67";
+}
+.icon-allicons-08:before {
+  content: "\68";
+}
+.icon-allicons-09:before {
+  content: "\69";
+}
+.icon-allicons-10:before {
+  content: "\6a";
+}
+.icon-allicons-11:before {
+  content: "\6b";
+}
+.icon-allicons-12:before {
+  content: "\6c";
+}
+.icon-allicons-13:before {
+  content: "\6d";
+}
+.icon-allicons-14:before {
+  content: "\6e";
+}
+.icon-allicons-15:before {
+  content: "\6f";
+}
+.icon-allicons-16:before {
+  content: "\70";
+}
+.icon-allicons-17:before {
+  content: "\71";
+}
+.icon-allicons-18:before {
+  content: "\72";
+}
+.icon-remove_arabic:before {
+  content: "\73";
+}
+.icon-allicon-01:before {
+  content: "\e903";
+}
+.icon-allicon-50:before {
+  content: "\e905";
+}
+.icon-allicon-06:before {
+  content: "\e90c";
+}
+.icon-microwave:before {
+  content: "\e906";
+}
+.icon-oven:before {
+  content: "\e906";
+}
+.icon-kitchen:before {
+  content: "\e906";
+}

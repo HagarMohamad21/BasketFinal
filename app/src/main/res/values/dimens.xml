@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bigTextSize">15sp</dimen>
+
+    <dimen name="viewsHeight">30dp</dimen>
+    <dimen name="viewsRadius">10dp</dimen>
+    <dimen name="textSize">10sp</dimen>
+    <dimen name="toolbarActionTxtSize">18sp</dimen>
+    <dimen name="verticalGuidelineMargin">10dp</dimen>
+    <dimen name="horizontalBottomGuidelineMargin">10dp</dimen>
+    <dimen name="toolbarHeight">60dp</dimen>
+    <dimen name="toolbarIconSize">25dp</dimen>
+    <dimen name="toolbarIconMargin">10dp</dimen>
+    <dimen name="iconTextPadding">5dp</dimen>
+    <dimen name="header_padding">10dp</dimen>
+    <dimen name="offer_box_dimension">300dp</dimen>
+    <dimen name="offer_item_margin">5dp</dimen>
+    <dimen name="offer_detalis_item_margin">10dp</dimen>
+    <dimen name="icon_button_txt_size">18sp</dimen>
+    <dimen name="BarIconSize">30dp</dimen>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/offerImage"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="@dimen/viewsRadius"
+        android:src="@mipmap/placeholder" />
+
+    <TextView
+        android:id="@+id/offerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="1dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:tag="bold"
+        android:text="@string/offer_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/offerImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <net.zonetech.elbasket.Utils.OfferRibbonView
+        android:id="@+id/offerRibbonView"
+        android:layout_width="50dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/offerImage" />
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discount"
+        android:textColor="@color/white"
+        android:tag="bold"
+        android:textSize="@dimen/textSize"
+        android:gravity="center_vertical"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/offerRibbonView"
+        app:layout_constraintStart_toStartOf="@+id/offerRibbonView"
+        app:layout_constraintTop_toTopOf="@+id/offerRibbonView" />
+</android.support.constraint.ConstraintLayout>

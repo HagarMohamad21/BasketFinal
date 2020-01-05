@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">الباسكت</string>
+    <string name="home">الرئيسية</string>
+    <string name="cart">العربة</string>
+    <string name="search">البحث</string>
+    <string name="offers">العروض</string>
+    <string name="account">الحساب</string>
+    <string name="withdraw">سحب</string>
+    <string name="log_out">خروج</string>
+    <string name="choose_image">إختر صورة</string>
+    <string name="camera">الكاميرا</string>
+    <string name="gallery">المعرض</string>
+    <string name="orders">طلباتي</string>
+    <string name="wishlist">الإعجابات</string>
+    <string name="personal_info">خاص بك</string>
+    <string name="headlines">قائمة العناوين</string>
+    <string name="breaking_news">اخر اللأخبار</string>
+    <string name="language">البلد واللغة</string>
+    <string name="switch_to_arabic">التحويل إلي الإنجليزية</string>
+    <string name="super_market">سوبر ماركت</string>
+    <string name="school_supplies">أدوات مكتبية</string>
+    <string name="toys">ألعاب أطفال</string>
+    <string name="kitchen_supplies">أدوات المطبخ</string>
+    <string name="backIcon">&#xe90c;</string>
+    <string name="edit">تعديل</string>
+    <string name="confirm_logout" >هل انت متأكد من الرغبة في تسجيل الخروج؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="Continue">متابعة</string>
+    <string name="type">النوع: </string>
+    <string name="color">اللون: </string>
+    <string name="delete">حذف</string>
+    <string name="confirm_deletion">هل انت متأكد من الرغبة في حذف هذا الطلب؟</string>
+    <string name="best_offers">أفضل العروض</string>
+    <string name="browse_by_category">الأكثر طلبا</string>
+    <string name="egypt">مصر</string>
+    <string name="cash_in_balance">الرصيد المتوفر :</string>
+    <string name="_500egp">500 جنية </string>
+    <string name="clothes">ملابس</string>
+    <string name="kids">أطفال</string>
+    <string name="electronics">أجهزة كهربائية</string>
+    <string name="smart_phones">هواتف ذكية</string>
+    <string name="cooking">المطبخ البيتي</string>
+    <string name="free_shipping">شحن مجاني</string>
+    <string name="egp">جنية</string>
+    <string name="confirm_withdrawal">هل انت متأكد من الرغبة في سحب أموالك</string>
+    <string name="add_to_cart">أضف إلي العربة</string>
+    <string name="free_shipping_included">مشمولة فالشحن المجاني</string>
+    <string name="_15_egp">15جنية </string>
+    <string name="pure_rice_one_of_the_finest">أرز الضحي نقي ومن اجود انواع الأرز</string>
+    <string name="prices_included_added_tax_value">الأسعار شتمل ضريبة القيمة المضافة</string>
+    <string name="details">التفاصيل</string>
+    <string name="weight">الوزن</string>
+    <string name="_100gm">100جم</string>
+    <string name="soundness">الصلاحية</string>
+    <string name="production_date">انتاج:</string>
+    <string name="expiration_date"> انتهاء:</string>
+    <string name="shipping_details">للحصول عليه غدا اطلب قبل 7 مساء</string>
+    <string name="shipping_city">إشحن إلي الجيزة</string>
+    <string name="free_shipping_on_orders_with_250_0">شحن مجاني علي الطلبات اكثر من 250.0</string>
+    <string name="discount"> -%25</string>
+    <string name="offer_name">اسم العرض</string>
+    <string name="samsung_phon_samsung_phons_amsung">هاتف سامسونج هاتف سامسونج هاتف سامسونج هاتف سامسونج </string>
+    <string name="change_city">(تغيير المدينة)</string>
+    <string name="search_hint">ما الذي تبحث عنه؟</string>
+    <string name="galaxy_phone">هاتف جلاكسي</string>
+    <string name="_11_200_egp">11,200 جنية</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="rating">تقييم تقييم تقييم تقييم تقييم</string>
+    <string name="remove">حذف</string>
+    <string name="total_cost">المبلغ الكلي :</string>
+    <string name="filter">Filter</string>
+    <string name="_50_items_available">50 بند متاح في </string>
+    <string name="description">الوصف</string>
+    <string name="descriptionTxt" >ستتمكني من تحضير طبقك المفضل من الأرز</string>
+    <string name="reviews">التقييمات</string>
+    <string name="give_rating">اكتب تقييما</string>
+    <string name="vendor" >البائع</string>
+    <string name="vendorTxt" >الباسكت </string>
+    <string name="sponser">برعاية</string>
+    <string name="crisp_chocolate_balls">كرات كرسب بالشوكلاتة</string>
+    <string name="similar_items">سلع مشابهة</string>
+    <string name="see_full_reviews">قراءة التقييم كامل</string>
+
+<!--RATING STRINGS -->
+
+
+    <string name="excellent">ممتاز</string>
+    <string name="very_good2">جيد جدا</string>
+    <string name="good">جيد</string>
+    <string name="okay">مقبول</string>
+    <string name="bad">ردئ</string>
+    <string name="write_a_comment">أكتب تعليق</string>
+
+</resources>

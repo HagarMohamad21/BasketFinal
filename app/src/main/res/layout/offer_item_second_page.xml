@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ratingsTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:tag="regular"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/black"
+        android:text="@string/reviews"
+        app:layout_constraintTop_toBottomOf="@id/sponsorList"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"/>
+    <TextView
+        android:id="@+id/ratingsBrowseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:tag="regular"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/see_full_reviews"
+        app:layout_constraintTop_toBottomOf="@id/sponsorList"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ratingsList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/ratingsTxt"
+        />
+    <TextView
+        android:id="@+id/ratingBtn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:background="@drawable/green_rounded_bg"
+        android:tag="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/white"
+        android:text="@string/give_rating"
+        app:layout_constraintTop_toBottomOf="@id/ratingsList"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"/>
+</merge>

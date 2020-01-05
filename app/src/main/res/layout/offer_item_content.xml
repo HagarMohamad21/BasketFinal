@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:fitsSystemWindows="true">
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toTopOf="@+id/divider"
+    app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/guidelines" />
+
+            <include layout="@layout/offer_item_upper_view" />
+
+
+            <include layout="@layout/offer_item_middle_view" />
+
+            <include layout="@layout/offer_item_first_page" />
+
+            <include layout="@layout/offer_item_second_page" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <TextView
+        android:id="@+id/favouriteBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/yellow_rounded_bg"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="23dp"
+         android:textAlignment="gravity"
+        android:gravity="center"
+        android:tag="icon"
+        android:text="@string/heartIcon"
+        android:textColor="@color/white"
+        android:textSize="@dimen/icon_button_txt_size"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <TextView
+        android:id="@+id/cartBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/green_rounded_bg"
+        android:gravity="center"
+        android:layout_marginEnd="20dp"
+        android:tag="icon"
+        android:layout_marginTop="5dp"
+        android:text="@string/cartIcon"
+        android:textColor="@color/white"
+        android:textSize="@dimen/icon_button_txt_size"
+        app:layout_constraintTop_toBottomOf="@id/favouriteBtn"
+        app:layout_constraintEnd_toEndOf="parent" />
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+    <include layout="@layout/bottom_navigation_with_pager" />
+
+    <include layout="@layout/snippet_toolbar" />
+
+</android.support.constraint.ConstraintLayout>

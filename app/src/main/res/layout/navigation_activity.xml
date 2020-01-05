@@ -1,0 +1,17 @@
+<android.support.v4.widget.DrawerLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:openDrawer="start"
+    android:id="@+id/Dlayout"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <include layout="@layout/navigation_content"/>
+
+    <include layout="@layout/left_drawer_menu"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/leftDrawerMenu"/>
+
+</android.support.v4.widget.DrawerLayout>

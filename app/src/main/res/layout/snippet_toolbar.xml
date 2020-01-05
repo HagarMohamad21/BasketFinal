@@ -1,0 +1,93 @@
+<merge xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbarHeight"
+        android:paddingBottom="10dp"
+            android:background="@mipmap/wave">
+
+
+
+        <Button
+                android:textAllCaps="false"
+                android:id="@+id/menuBtn"
+                android:layout_width="@dimen/BarIconSize"
+                android:layout_height="@dimen/BarIconSize"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/toolbarIconMargin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:tag="icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:padding="@dimen/iconTextPadding"
+                android:textSize="20sp"
+                android:background="@drawable/black_transparent_circle"
+                android:textColor="@color/white"
+                android:text="@string/menuIcon"
+                />
+
+        <TextView
+            android:visibility="gone"
+                android:id="@+id/toolbarTitleTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:tag="icon"
+            android:text="@string/logoIcon"
+                android:textColor="@color/white"
+                android:textSize="80sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:scaleType="centerCrop"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_logo" />
+
+        <TextView
+                android:id="@+id/toolbarActionTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:tag="regular"
+                android:visibility="invisible"
+                android:layout_marginEnd="@dimen/toolbarIconMargin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/toolbarActionTxtSize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+                android:id="@+id/toolbarBackIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:tag="icon"
+                android:text="@string/backIcon"
+                android:visibility="invisible"
+                android:layout_marginEnd="@dimen/toolbarIconMargin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/toolbarActionTxtSize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</merge>
+

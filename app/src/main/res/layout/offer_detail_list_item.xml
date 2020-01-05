@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/offer_item_margin"
+        android:layout_marginBottom="@dimen/offer_item_margin"
+    android:padding="10dp"
+    android:background="@drawable/white_background"
+         android:id="@+id/root"
+        android:layout_height="wrap_content">
+    <include layout="@layout/guidelines"/>
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/offerImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="@dimen/viewsRadius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/placeholder"/>
+
+    <net.zonetech.elbasket.Utils.OfferRibbonView
+        android:id="@+id/offerRibbonView"
+        android:layout_width="50dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/offerImage" />
+
+    <TextView
+        android:id="@+id/discountTxt"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discount"
+        android:textColor="@color/white"
+        android:tag="bold"
+        android:textSize="@dimen/textSize"
+        android:layout_marginStart="5dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/offerRibbonView"
+        app:layout_constraintStart_toStartOf="@+id/offerRibbonView"
+        app:layout_constraintTop_toTopOf="@+id/offerRibbonView" />
+
+    <TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:tag="regular"
+        android:text="@string/pure_rice_one_of_the_finest"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/offerImage"
+        app:layout_constraintTop_toTopOf="@+id/offerImage" />
+
+    <TextView
+        android:id="@+id/ratingTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/starIcon"
+        android:tag="icon"
+        android:textSize="@dimen/icon_button_txt_size"
+        android:layout_marginStart="@dimen/offer_item_margin"
+        app:layout_constraintStart_toEndOf="@+id/offerImage"
+        app:layout_constraintTop_toBottomOf="@+id/titleTxt" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/offer_item_margin"
+        android:tag="regular"
+        android:text="(50)"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/ratingTxt"
+        app:layout_constraintStart_toEndOf="@+id/ratingTxt"
+        app:layout_constraintTop_toTopOf="@+id/ratingTxt" />
+
+    <TextView
+        android:id="@+id/priceTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/offer_item_margin"
+        android:tag="bold"
+        android:text="@string/_15_egp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toEndOf="@+id/offerImage"
+        app:layout_constraintTop_toBottomOf="@+id/ratingTxt" />
+
+    <TextView
+        android:id="@+id/cartBtn"
+        android:layout_width="80dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:background="@drawable/green_rounded_bg"
+        android:gravity="center"
+        android:tag="bold"
+        android:text="@string/add_to_cart"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/favouriteBtn" />
+
+    <TextView
+        android:id="@+id/favouriteBtn"
+        android:layout_width="30dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:background="@drawable/yellow_rounded_bg"
+        android:gravity="center"
+        android:tag="icon"
+        android:text="@string/heartIcon"
+        android:textColor="@color/white"
+        android:textSize="@dimen/icon_button_txt_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:tag="regular"
+        android:text="@string/free_shipping"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toEndOf="@+id/offerImage"
+        app:layout_constraintTop_toBottomOf="@+id/priceTxt" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="editIcon" translatable="false">&#xe901;</string>
+    <string name="languageIcon" translatable="false">&#xe900;</string>
+    <string name="logoIcon" translatable="false">&#x61;</string>
+    <string name="menuIcon" translatable="false">&#x62;</string>
+    <string name="searchIcon" translatable="false">&#x63;</string>
+    <string name="homeIcon" translatable="false">&#x64;</string>
+    <string name="offersIcon" translatable="false">&#x65;</string>
+    <string name="accountIcon" translatable="false">&#x67;</string>
+    <string name="basketIcon" translatable="false">&#x68;</string>
+    <string name="pensIcon" translatable="false">&#x69;</string>
+    <string name="teddyBearIcon" translatable="false">&#x6a;</string>
+    <string name="spoonsIcon" translatable="false">&#x6b;</string>
+    <string name="vanIcon" translatable="false">&#x6c;</string>
+    <string name="heartIcon" translatable="false">&#xe908;</string>
+    <string name="accountStarIcon" translatable="false">&#x6e;</string>
+    <string name="headlinesIcon" translatable="false">&#x6f;</string>
+    <string name="calendarIcon" translatable="false">&#x70;</string>
+    <string name="checkIcon" translatable="false">&#x71;</string>
+    <string name="closeIcon" translatable="false">&#xe902;</string>
+    <string name="errorIcon" translatable="false">&#xe903;</string>
+    <string name="plugIcon" translatable="false">&#xe904;</string>
+    <string name="microWaveIcon" translatable="false">&#xe906;</string>
+    <string name="cartIcon" translatable="false">&#xe907;</string>
+    <string name="starIcon" translatable="false">&#xe909;</string>
+    <string name="filledHeart" translatable="false">&#xe90a;</string>
+    <string name="binIcon" translatable="false">&#xe90b;</string>
+    <string name="subIcon" translatable="false">&#xe90e;</string>
+    <string name="addIcon" translatable="false">&#xe90d;</string>
+    <string name="gridIcon" translatable="false">&#xe90f;</string>
+ <string name="earthIcon" translatable="false">&#xe910;</string>
+<string name="sendIcon" translatable="false">&#xe911;</string>
+</resources>
