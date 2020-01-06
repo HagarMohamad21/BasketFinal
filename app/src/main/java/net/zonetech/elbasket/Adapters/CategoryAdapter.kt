@@ -9,12 +9,14 @@ import net.zonetech.elbasket.Models.Category
 import net.zonetech.elbasket.R
 import kotlinx.android.synthetic.main.category_list_item.view.*
 import net.zonetech.elbasket.Activities.OfferDetailsActivity
+import net.zonetech.elbasket.Models.Offer
 import net.zonetech.elbasket.Utils.CommonMethods
 import net.zonetech.elbasket.Utils.MarginOverrider
 import net.zonetech.elbasket.Utils.open
+import net.zonetech.elbasket.Utils.openOffer
 
 
-class CategoryAdapter(var categories:ArrayList<Category>,var c:Context) : RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>() {
+class CategoryAdapter(var categories:ArrayList<Offer>,var c:Context) : RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>() {
     var commonMethods= CommonMethods(c)
     var marginOverrider= MarginOverrider(c)
 
@@ -36,13 +38,15 @@ class CategoryAdapter(var categories:ArrayList<Category>,var c:Context) : Recycl
 
     inner class CategoryViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val TAG = "CategoryAdapter"
-        fun bind(category: Category, pos: Int){
+        fun bind(category: Offer, pos: Int){
             commonMethods.setupFonts(itemView)
-            itemView.categoryName.text=category.name
+            itemView.categoryName.text=category.offerName
+            itemView.categoryImage.setImageResource(category.offerImage)
             overrideMargins(pos)
             itemView.setOnClickListener{
-                c.open(OfferDetailsActivity(), category.name)
+                c.openOffer(OfferDetailsActivity(),"", category)
             }
+
         }
 
         private fun overrideMargins(

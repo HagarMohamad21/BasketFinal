@@ -13,6 +13,7 @@ import net.zonetech.elbasket.R
 import net.zonetech.elbasket.Utils.CommonMethods
 import net.zonetech.elbasket.Utils.MarginOverrider
 import net.zonetech.elbasket.Utils.open
+import net.zonetech.elbasket.Utils.openOffer
 
 class BestOffersAdapter(var context: Context, var offersList: ArrayList<Offer>?) : RecyclerView.Adapter<BestOffersAdapter.OfferViewHolder>() {
 
@@ -49,7 +50,7 @@ class BestOffersAdapter(var context: Context, var offersList: ArrayList<Offer>?)
 
            }
            itemView.setOnClickListener {
-               context.open(OfferItemActivity(),hasRibbon)
+               context.openOffer(OfferItemActivity(),hasRibbon,Offer(offerImage =R.mipmap.galaxyphone ))
            } }
 
     }

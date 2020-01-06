@@ -15,6 +15,7 @@ import net.zonetech.elbasket.R
 import net.zonetech.elbasket.Utils.CommonMethods
 import net.zonetech.elbasket.Utils.MarginOverrider
 import net.zonetech.elbasket.Utils.open
+import net.zonetech.elbasket.Utils.openOffer
 
 class OffersAdapter(var context: Context,var offers:ArrayList<Offer>?) : RecyclerView.Adapter<OffersAdapter.OffersViewHolder>() {
 
@@ -28,9 +29,7 @@ class OffersAdapter(var context: Context,var offers:ArrayList<Offer>?) : Recycle
         return OffersViewHolder(view)
     }
 
-    override fun getItemCount(): Int {
-        return 10
-    }
+    override fun getItemCount()=offers!!.size
 
     override fun onBindViewHolder(p0: OffersViewHolder, p1: Int) {
 
@@ -44,13 +43,19 @@ class OffersAdapter(var context: Context,var offers:ArrayList<Offer>?) : Recycle
             commonMethods.setupFonts(itemView)
 
             if (offers != null) {
-                offerTitle=offers!![0].offerCategory
-                itemView.offerName.text= offerTitle
+//               if(offers!![pos].offerCategory!=""){
+//                   offerTitle=offers!![0].offerCategory
+//                   itemView.offerName.text= offerTitle
+//               }
+                 if(offers!![pos].offerImage!=-1){
+                   itemView.offerName.text=offers!![pos].offerName
+                   itemView.offerImage.setImageResource(offers!![pos].offerImage)
+               }
 
             }
 
             itemView.offerImage.setOnClickListener {
-               context.open(OfferItemActivity(),hasRibbon)
+               context.openOffer(OfferItemActivity(),hasRibbon,offers!![pos])
             }
 
             overrideMargins(pos)
@@ -82,4 +87,6 @@ class OffersAdapter(var context: Context,var offers:ArrayList<Offer>?) : Recycle
 
     }
 }
+
+
 

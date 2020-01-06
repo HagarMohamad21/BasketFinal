@@ -33,9 +33,7 @@ var hasRibbon="FALSE"
         return OfferDetailHolder(view)
     }
 
-    override fun getItemCount(): Int {
-        return 5
-    }
+    override fun getItemCount()=4
 
     override fun onBindViewHolder(p0: OfferDetailHolder, p1: Int) {
      p0.bind(p1)
@@ -51,13 +49,14 @@ var hasRibbon="FALSE"
         fun bind(pos:Int){
 
             when(pos){
-               0, 2,4->{
+               0, 2->{
                     itemView.discountTxt.toggleVisiblity(true)
                     itemView.offerRibbonView.toggleVisiblity(true)
                 }
             }
             if (offers != null) {
-                itemView.titleTxt.text=offers!![0].offerCategory
+                itemView.titleTxt.text=offers!![pos].offerName
+                itemView.offerImage.setImageResource(offers!![pos].offerImage)
             }
 
             var spannable=RatingConfiguration.setupText(context,3f)
@@ -74,7 +73,7 @@ var hasRibbon="FALSE"
                     }
                    else -> "FALSE"
                }
-               context.open(OfferItemActivity(),hasRibbon)
+               context.openOffer(OfferItemActivity(),hasRibbon,offers!![pos])
             }
             itemView.favouriteBtn.setOnClickListener {
                 if(!isFav){

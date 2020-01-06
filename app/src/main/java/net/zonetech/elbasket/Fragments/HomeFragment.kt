@@ -14,6 +14,7 @@ import net.zonetech.elbasket.Activities.*
 import net.zonetech.elbasket.R
 import net.zonetech.elbasket.Utils.Common
 import net.zonetech.elbasket.Utils.CommonMethods
+import net.zonetech.elbasket.Utils.getCategories
 import net.zonetech.elbasket.Utils.toggleVisiblity
 
 
@@ -48,7 +49,7 @@ lateinit var homeFragment:View
                         homeFragment.categoryList,
                         Common.LAYOUT_CATEGORY,
                         activity as MainActivity,
-                        null
+                       null
                     )
                     commonMethods.populateMainList(
                         homeFragment.offerList,

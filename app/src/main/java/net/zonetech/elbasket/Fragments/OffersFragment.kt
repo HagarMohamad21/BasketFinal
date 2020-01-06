@@ -15,10 +15,12 @@ import net.zonetech.elbasket.Activities.*
 import net.zonetech.elbasket.R
 import net.zonetech.elbasket.Utils.Common
 import net.zonetech.elbasket.Utils.CommonMethods
+import net.zonetech.elbasket.Utils.getOffers
 import net.zonetech.elbasket.Utils.toggleVisiblity
 
 
 class OffersFragment : Fragment() {
+
     private val TAG = "OffersFragment"
     lateinit var commonMethods: CommonMethods
     lateinit var offerFragment:View
@@ -37,7 +39,7 @@ class OffersFragment : Fragment() {
                     offerFragment.mainList,
                     Common.LAYOUT_OFFER,
                     activity as MainActivity,
-                    null
+                    getOffers()
                 )
 
             }

@@ -29,7 +29,7 @@ class CommonMethods(var c: Context) {
         fonts.Fonts()
         fonts.setTypeFce(view)
     }
-
+  var listOffers=getOffers()
     fun populateMainList(
         mainList: RecyclerView,
         layoutType: Int,
@@ -39,8 +39,7 @@ class CommonMethods(var c: Context) {
         when (layoutType) {
             Common.LAYOUT_OFFER -> {
                 var adapter: OffersAdapter
-                adapter = OffersAdapter(c, list)
-
+                adapter = OffersAdapter(c, listOffers)
                 adapter.onReplaceLayoutRequest = onReplaceLayoutRequest
                 mainList.layoutManager = GridLayoutManager(c, 2)
                 mainList.adapter = adapter
@@ -58,7 +57,7 @@ class CommonMethods(var c: Context) {
                 mainList.adapter = adapter
             }
             Common.LAYOUT_CATEGORY -> {
-                var adapter = CategoryAdapter(Common.add(c), c)
+                var adapter = CategoryAdapter(getCategories(), c)
                 mainList.layoutManager = GridLayoutManager(c, 3)
                 mainList.adapter = adapter
             }

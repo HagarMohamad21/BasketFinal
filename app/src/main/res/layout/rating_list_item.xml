@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/textSize"
         android:tag="regular"
-        android:text="@string/rating"
+        android:text="Good product"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ratingTxt" />
 
@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:text="@string/user_name"
+        android:text="Esam Melad"
         android:textSize="@dimen/textSize"
         android:tag="regular"
         app:layout_constraintStart_toStartOf="parent"

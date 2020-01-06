@@ -22,6 +22,7 @@ import net.zonetech.elbasket.Dialogs.CustomDialog
 import net.zonetech.elbasket.Helpers.BottomNavHelper
 import net.zonetech.elbasket.Helpers.NavigationDrawerhelper
 import net.zonetech.elbasket.Helpers.RatingConfiguration
+import net.zonetech.elbasket.Models.Offer
 import net.zonetech.elbasket.R
 import net.zonetech.elbasket.Utils.*
 
@@ -68,7 +69,12 @@ class OfferItemActivity : AppCompatActivity(), OnReplaceLayoutRequest {
             discountTxt.toggleVisiblity(true)
            offerRibbonView.toggleVisiblity(true)
         }
-
+          var offer=intent.getParcelableExtra<Offer>("Offer")
+        if(offer!=null)
+        {
+            offerImage.setImageResource(offer.offerImage)
+            offerName.text=offer.offerName
+        }
 
     }
 
